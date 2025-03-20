@@ -33,7 +33,33 @@ class LinkedList {
         this.size++;
     }
 
+    size() {
+        return this.size;
+    }
 
+    head() {
+        return this.head;
+    }
+
+    tail() {
+        return this.tail;
+    }
+
+    at(index) {
+        if(index < 0 || index >= this.size) {
+            return null;
+        }
+
+        let currentNode = this.head;
+        let counter = 0;
+
+        while (counter < index) {
+            currentNode = currentNode.nextNode;
+            counter++;
+        }
+
+        return currentNode;
+    }
 }
 
 class Node {
