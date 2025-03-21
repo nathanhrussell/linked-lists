@@ -1,4 +1,4 @@
-class LinkedList {
+export default class LinkedList {
     constructor() {
         this.head = null;
         this.tail = null;
@@ -123,7 +123,7 @@ class LinkedList {
         let result = "";
         
         while (currentNode) {
-            result += `( ${currentNode.vlaue} ) -> `;
+            result += `( ${currentNode.value} ) -> `;
             currentNode = currentNode.nextNode;
         }
 
