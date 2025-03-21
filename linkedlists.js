@@ -118,6 +118,19 @@ class LinkedList {
         return null;
     }
 
+    toString() {
+        let currentNode = this.head;
+        let result = "";
+        
+        while (currentNode) {
+            result += `( ${currentNode.vlaue} ) -> `;
+            currentNode = currentNode.nextNode;
+        }
+
+        result += "null";
+        return result;
+    }
+
 
 }
 
